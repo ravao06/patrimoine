@@ -4,6 +4,7 @@ import static java.awt.EventQueue.invokeLater;
 
 import java.util.List;
 import school.hei.patrimoine.cas.example.EtudiantPireCas;
+import school.hei.patrimoine.cas.example.PatrimoineBako;
 import school.hei.patrimoine.cas.example.PatrimoineCresusSupplier;
 import school.hei.patrimoine.cas.example.PatrimoineRicheSupplier;
 
@@ -15,6 +16,7 @@ public class VisualiseurCas {
             new MainIHM(
                 List.of(
                     new EtudiantPireCas().patrimoine(),
+                    new PatrimoineBako().get(),
                     new PatrimoineRicheSupplier().get(),
                     new PatrimoineCresusSupplier().get())));
   }
